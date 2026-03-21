@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Black+Han+Sans&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #010a13;
+  font-family: 'Noto Sans KR', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: #0d1117; }
+::-webkit-scrollbar-thumb { background: #463714; border-radius: 3px; }
+
+@keyframes fi { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes fo { from { opacity: 1; } to { opacity: 0; } }
+@keyframes ti { from { transform: translateX(-50%) translateY(30px); opacity: 0; } to { transform: translateX(-50%) translateY(0); opacity: 1; } }
+@keyframes sp { to { transform: rotate(360deg); } }
+@keyframes mi { from { opacity: 0; transform: scale(.96); } to { opacity: 1; transform: scale(1); } }
+@keyframes glow { 0%, 100% { box-shadow: 0 0 20px rgba(200,170,110,.15); } 50% { box-shadow: 0 0 40px rgba(200,170,110,.3); } }
+
+button { cursor: pointer; transition: all .15s; }
+button:hover { filter: brightness(1.12); }
+button:active { transform: scale(.97); }
+button:disabled { opacity: .4; cursor: not-allowed; filter: none; transform: none; }
+select:focus, input:focus { outline: none; border-color: #c8aa6e !important; }
+td { transition: background .12s; }
